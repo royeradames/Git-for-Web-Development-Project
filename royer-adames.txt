@@ -116,6 +116,13 @@ Stretch Questions
     border is the fence
     padding is the space outside your fence before you touch the sidewalk  
 
-
-
+    The border fix is changing the border box default behavior from expanding the border box outside to expanding it inside so when you give a div a border it does not add that border to the height and weidth, messing up your layout.
+    
+    The border box I have used is:
+    html {
+     box-sizing: border-box;
+    }
+    *, *:before, *:after {
+       box-sizing: inherit;
+    }
    --> 
